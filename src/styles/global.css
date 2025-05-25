@@ -62,3 +62,9 @@
   --text-2: clamp(0.625rem, 1.5vw, 0.625rem);
   --font-content: "Open Sans", sans-serif;
 }
+
+/* landing page - hero section style */
+.hero-bg {
+  background: linear-gradient(rgba(0, 34, 65, 0.1), rgba(0, 34, 65, 0)),
+    url(../assets/images/hero1/hero_1.png) no-repeat center / cover;
+}
