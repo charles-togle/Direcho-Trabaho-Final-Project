@@ -2,57 +2,57 @@
 
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 @theme {
-  --color-primary-red: #C22026;
+  --color-primary-red: #c22026;
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-base-shade: #1E1F22;
-  --color-shade-2: #292B31;
+  --color-base-shade: #1e1f22;
+  --color-shade-2: #292b31;
   --color-black-100: #000000;
-  --color-black-88: #1F1F1F;
+  --color-black-88: #1f1f1f;
   --color-black-80: #333333;
   --color-black-60: #666666;
   --color-black-40: #999999;
-  --color-black-32: #ADADAD;
-  --color-black-24: #C2C2C2;
-  --color-black-16: #D6D6D6;
-  --color-black-8: #EBEBEB;
-  --color-black-4: #F5F5F5;
-  --color-error: #FF0000;
-  --color-warning: #FFA800;
-  --color-success: #13E574;
-  --color-info: #00A3FF;
+  --color-black-32: #adadad;
+  --color-black-24: #c2c2c2;
+  --color-black-16: #d6d6d6;
+  --color-black-8: #ebebeb;
+  --color-black-4: #f5f5f5;
+  --color-error: #ff0000;
+  --color-warning: #ffa800;
+  --color-success: #13e574;
+  --color-info: #00a3ff;
   --text-heading-1: clamp(2.5rem, 5vw, 2.5rem); /* 40px */
   --text-heading-2: clamp(1.25rem, 4vw, 1.25rem); /* 20px */
   --text-heading-3: clamp(1rem, 3vw, 1rem); /* 16px */
   --text-heading-4: clamp(0.875rem, 2.5vw, 0.875rem); /* 14px */
   --text-text-1: clamp(0.75rem, 2vw, 0.75rem); /* 12px */
   --text-text-2: clamp(0.625rem, 1.5vw, 0.625rem); /* 10px */
-  --font-content: 'Open Sans', sans-serif;
+  --font-content: "Open Sans", sans-serif;
 }
 
 :root {
-  --primary-red: #C22026;
+  --primary-red: #c22026;
   --black: #000000;
   --white: #ffffff;
-  --base-shade: #1E1F22;
-  --shade-2: #292B31;
+  --base-shade: #1e1f22;
+  --shade-2: #292b31;
   --black-100: #000000;
-  --black-88: #1F1F1F;
+  --black-88: #1f1f1f;
   --black-80: #333333;
   --black-60: #666666;
   --black-40: #999999;
-  --black-32: #ADADAD;
-  --black-24: #C2C2C2;
-  --black-16: #D6D6D6;
-  --black-8: #EBEBEB;
-  --black-4: #F5F5F5;
-  --error: #FF0000;
-  --warning: #FFA800;
-  --success: #13E574;
-  --info: #00A3FF;
+  --black-32: #adadad;
+  --black-24: #c2c2c2;
+  --black-16: #d6d6d6;
+  --black-8: #ebebeb;
+  --black-4: #f5f5f5;
+  --error: #ff0000;
+  --warning: #ffa800;
+  --success: #13e574;
+  --info: #00a3ff;
   /* fonts */
   --heading-1: clamp(2.5rem, 5vw, 2.5rem);
   --heading-2: clamp(1.25rem, 4vw, 1.25rem);
@@ -60,6 +60,28 @@
   --heading-4: clamp(0.875rem, 2.5vw, 0.875rem);
   --text-1: clamp(0.75rem, 2vw, 0.75rem);
   --text-2: clamp(0.625rem, 1.5vw, 0.625rem);
-  --font-content: 'Open Sans', sans-serif;
+  --font-content: "Open Sans", sans-serif;
 }
 
+.brand-featured {
+  display: flex;
+  gap: 10px;
+  padding: 2rem;
+}
+
+.brand-featured-btn {
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 20%;
+  background-color: var(--primary-red);
+  color: var(--white);
+  font-size: var(--text-text-1);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.brand-featured-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
