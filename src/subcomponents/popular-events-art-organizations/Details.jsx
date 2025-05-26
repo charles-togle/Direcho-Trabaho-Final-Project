@@ -29,4 +29,4 @@ const Details = ({ title, location, price, priceNote, date, description }) => {
   )
 }
 
-export default React.memo(Details)
+export default Details

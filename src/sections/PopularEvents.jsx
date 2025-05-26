@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { getData } from '../services/getEvents'
 import Card from '../subcomponents/popular-events-art-organizations/Card'
 import PopularEventsBg from '../assets/images/popular-events/bg.png'
@@ -22,13 +22,13 @@ export default function PopularEvents () {
     return <p className='text-white'>Loading</p>
   }
 
-  const handleHeart = useCallback(index => {
+  const handleHeart = index => {
     setHearts(prev => {
       const updated = [...prev]
       updated[index] = !updated[index]
       return updated
     })
-  })
+  }
 
   return (
     <section
