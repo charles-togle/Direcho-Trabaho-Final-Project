@@ -1,0 +1,22 @@
+.brand-featured {
+  display: flex;
+  gap: 10px;
+  padding: 2rem;
+}
+
+.brand-featured-btn {
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 20%;
+  background-color: var(--primary-red);
+  color: var(--white);
+  font-size: var(--text-text-1);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.brand-featured-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

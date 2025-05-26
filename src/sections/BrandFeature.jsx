@@ -1,5 +1,7 @@
 //Get your brand featured on RCA today!
 
+import "../styles/card.css";
+
 export default function BrandFeatured({ image }) {
   return (
     <section className="brand-featured">
