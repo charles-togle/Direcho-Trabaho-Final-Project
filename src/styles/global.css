@@ -2,7 +2,7 @@
 
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 @theme {
   --color-primary-red: #C22026;
@@ -25,10 +25,9 @@
   --color-success: #13E574;
   --color-info: #00A3FF;
   --text-heading-1: clamp(2.5rem, 5vw, 2.5rem); /* 40px */
-  --text-heading-2: clamp(1.5rem, 3vw, 1.5rem); /* 24px */
-  --text-heading-3: clamp(1.25rem, 4vw, 1.25rem); /* 20px */
-  --text-heading-4: clamp(1rem, 3vw, 1rem); /* 16px */
-  --text-heading-5: clamp(0.875rem, 2.5vw, 0.875rem); /* 14px */
+  --text-heading-2: clamp(1.25rem, 4vw, 1.25rem); /* 20px */
+  --text-heading-3: clamp(1rem, 3vw, 1rem); /* 16px */
+  --text-heading-4: clamp(0.875rem, 2.5vw, 0.875rem); /* 14px */
   --text-text-1: clamp(0.75rem, 2vw, 0.75rem); /* 12px */
   --text-text-2: clamp(0.625rem, 1.5vw, 0.625rem); /* 10px */
   --font-content: 'Open Sans', sans-serif;
@@ -56,15 +55,9 @@
   --info: #00A3FF;
   /* fonts */
   --heading-1: clamp(2.5rem, 5vw, 2.5rem);
-  /* 40px */
-  --heading-2: clamp(1.5rem, 3vw, 1.5rem);
-  /* 24px */
-  --heading-3: clamp(1.25rem, 4vw, 1.25rem);
-  /* 20px */
-  --heading-4: clamp(1rem, 3vw, 1rem);
-  /* 16px */
-  --heading-5: clamp(0.875rem, 2.5vw, 0.875rem);
-  /* 14px */
+  --heading-2: clamp(1.25rem, 4vw, 1.25rem);
+  --heading-3: clamp(1rem, 3vw, 1rem);
+  --heading-4: clamp(0.875rem, 2.5vw, 0.875rem);
   --text-1: clamp(0.75rem, 2vw, 0.75rem);
   --text-2: clamp(0.625rem, 1.5vw, 0.625rem);
   --font-content: 'Open Sans', sans-serif;
