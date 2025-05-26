@@ -6,12 +6,12 @@
             "price": "$50",
             "priceNote": "Start from",
             "date": "5/04/2021 - 10/10/2021",
-            "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+            "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day ...",
             "tags": [
                 "Theater",
                 "Musical"
             ],
-            "image": "@/assets/images/popular-events/book_of_mormon.png"
+            "image": "src/assets/images/popular-events/book_of_mormon.png"
         },
         {
             "title": "Hamilton",
@@ -19,12 +19,12 @@
             "price": "$50",
             "priceNote": "Start from",
             "date": "5/04/2021 - 10/10/2021",
-            "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+            "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day ...",
             "tags": [
                 "Theater",
                 "Musical"
             ],
-            "image": "@/assets/images/popular-events/hamilton.png"
+            "image": "src/assets/images/popular-events/hamilton.png"
         },
         {
             "title": "SF Symphony Sound Box",
@@ -32,12 +32,12 @@
             "price": "$50",
             "priceNote": "Avg. price",
             "date": "5/04/2021 - 10/10/2021",
-            "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+            "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day ...",
             "tags": [
                 "Theater",
                 "Musical"
             ],
-            "image": "@/assets/images/popular-events/symphony_sound_box.png"
+            "image": "src/assets/images/popular-events/symphony_sound_box.png"
         },
         {
             "title": "Moulin Rouge",
@@ -45,12 +45,12 @@
             "price": "$50",
             "priceNote": "Avg. price",
             "date": "5/04/2021 - 10/10/2021",
-            "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+            "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day ...",
             "tags": [
                 "Theater",
                 "Musical"
             ],
-            "image": "@/assets/images/popular-events/moulin_rouge.png"
+            "image": "src/assets/images/popular-events/moulin_rouge.png"
         }
     ]
 }
