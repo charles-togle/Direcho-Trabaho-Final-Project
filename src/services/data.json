@@ -1,0 +1,56 @@
+{
+    "popularEvents": [
+        {
+            "title": "The Book of Mormon",
+            "location": "San Francisco, CA",
+            "price": "$50",
+            "priceNote": "Start from",
+            "date": "5/04/2021 - 10/10/2021",
+            "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+            "tags": [
+                "Theater",
+                "Musical"
+            ],
+            "image": "@/assets/images/popular-events/book_of_mormon.png"
+        },
+        {
+            "title": "Hamilton",
+            "location": "New York City, NY",
+            "price": "$50",
+            "priceNote": "Start from",
+            "date": "5/04/2021 - 10/10/2021",
+            "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+            "tags": [
+                "Theater",
+                "Musical"
+            ],
+            "image": "@/assets/images/popular-events/hamilton.png"
+        },
+        {
+            "title": "SF Symphony Sound Box",
+            "location": "San Francisco, CA",
+            "price": "$50",
+            "priceNote": "Avg. price",
+            "date": "5/04/2021 - 10/10/2021",
+            "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+            "tags": [
+                "Theater",
+                "Musical"
+            ],
+            "image": "@/assets/images/popular-events/symphony_sound_box.png"
+        },
+        {
+            "title": "Moulin Rouge",
+            "location": "New York City, NY",
+            "price": "$50",
+            "priceNote": "Avg. price",
+            "date": "5/04/2021 - 10/10/2021",
+            "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day Saints.",
+            "tags": [
+                "Theater",
+                "Musical"
+            ],
+            "image": "@/assets/images/popular-events/moulin_rouge.png"
+        }
+    ]
+}
