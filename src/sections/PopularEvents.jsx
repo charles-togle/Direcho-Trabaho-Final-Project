@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState } from 'react'
 import { getData } from '../services/getEvents'
 import Card from '../subcomponents/popular-events-art-organizations/Card'
 import PopularEventsBg from '../assets/images/popular-events/bg.png'

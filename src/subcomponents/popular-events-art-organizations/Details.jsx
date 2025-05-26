@@ -1,4 +1,11 @@
-const Details = ({ title, location, price, priceNote, date, description }) => {
+export default function Details ({
+  title,
+  location,
+  price,
+  priceNote,
+  date,
+  description
+}) {
   return (
     <div id='details'>
       <div
@@ -28,5 +35,3 @@ const Details = ({ title, location, price, priceNote, date, description }) => {
     </div>
   )
 }
-
-export default Details
