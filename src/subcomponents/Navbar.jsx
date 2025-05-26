@@ -13,9 +13,10 @@ export default function Navbar() {
           <img src={Logo} alt="Logo" />
         </div>
         <div className="flex gap-5 items-center text-white">
-          <p>For professionals</p>
+          <p className="font-semibold leading-[100%]">For professionals</p>
           <div className="flex gap-2 items-center p-3 border-none rounded-3xl bg-[#1E1F22]">
             <RxHamburgerMenu
+              className="cursor-pointer transition-all duration-200"
               size={20}
               onClick={() => setOpenBurger((prev) => !prev)}
             />
