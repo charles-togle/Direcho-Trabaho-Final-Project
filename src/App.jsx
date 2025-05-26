@@ -14,7 +14,7 @@ import Navbar from '@/subcomponents/Navbar'
 
 function App () {
   return (
-    <div>
+    <div className='w-screen pr-20 pl-20 bg-black'>
       <Navbar></Navbar>
       <Hero></Hero>
       <BrandFeatured></BrandFeatured>
