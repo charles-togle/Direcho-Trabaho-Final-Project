@@ -68,3 +68,9 @@
   background: linear-gradient(rgba(0, 34, 65, 0.1), rgba(0, 34, 65, 0)),
     url(../assets/images/hero1/hero_1.png) no-repeat center / cover;
 }
+
+.hero2-bg {
+  background: linear-gradient(rgba(0, 34, 65, 0.1), rgba(0, 34, 65, 0)),
+    url(../assets/images/brand-featured/brand_featured_1.png) no-repeat center /
+      cover;
+}

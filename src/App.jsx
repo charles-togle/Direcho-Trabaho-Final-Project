@@ -20,6 +20,7 @@ function App() {
       </header>
       <main>
         <Hero></Hero>
+        <AddEvents />
       </main>
       <Footer></Footer>
     </div>

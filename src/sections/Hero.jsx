@@ -1,5 +1,7 @@
 //Your source for the arts.
 
+import Hero2 from "./Hero2";
+
 export default function Hero() {
   return (
     <section className="hero-bg h-screen flex flex-col justify-center text-white lg:items-start">
@@ -11,6 +13,7 @@ export default function Hero() {
           Search events, concerts, artists and much more.
         </p>
       </div>
+      <Hero2 />
     </section>
   );
 }
