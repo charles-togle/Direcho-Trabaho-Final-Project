@@ -14,14 +14,18 @@ import Navbar from "@/subcomponents/Navbar";
 
 function App() {
   return (
-    <div>
-      <header>
-        <Navbar></Navbar>
-      </header>
-      <main>
-        <Hero></Hero>
-        <AddEvents />
-      </main>
+    <div className="w-screen pr-20 pl-20 bg-black">
+      <Navbar></Navbar>
+      <Hero></Hero>
+      <BrandFeatured></BrandFeatured>
+      <CityGuides></CityGuides>
+      <PopularEvents></PopularEvents>
+      <PerformanceSpotlights></PerformanceSpotlights>
+      <ArtOrganizations></ArtOrganizations>
+      <GoBackstage></GoBackstage>
+      <LatestNews></LatestNews>
+      <Hero2></Hero2>
+      <AddEvents></AddEvents>
       <Footer></Footer>
     </div>
   );
