@@ -18,7 +18,7 @@ import brandFeaturedImage from "@/assets/images/brand-featured/brand_featured_1.
 
 function App() {
   return (
-    <div>
+    <div className='w-screen pr-20 pl-20 bg-black'>
       <Navbar></Navbar>
       <Hero></Hero>
       <BrandFeatured image={brandFeaturedImage}></BrandFeatured>
