@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
+import "../styles/button.css";
 
-const Button = () => {
+const Button = ({ buttonText }) => {
+  return (
+    <div className="card-btn-wrapper">
+      <button className="card-btn">{buttonText}</button>
+    </div>
+  );
+};
 
-}
-
-export default React.memo(Button)
+export default React.memo(Button);
