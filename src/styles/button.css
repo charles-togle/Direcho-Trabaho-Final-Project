@@ -1,0 +1,30 @@
+.card-btn-wrapper {
+  margin-top: 0;
+}
+
+.card-btn {
+  padding: 0;
+  border-radius: 100px;
+  min-width: 0;
+  width: 167.5px;
+  height: 48px;
+  background: linear-gradient(135deg, #c22026, #9e0e86);
+  color: var(--white);
+  font-size: var(--text-1);
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(194, 32, 38, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .card-btn {
+    width: 100%;
+  }
+}

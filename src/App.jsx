@@ -12,20 +12,24 @@ import PerformanceSpotlights from "@/sections/PerformanceSpotlights";
 import PopularEvents from "@/sections/PopularEvents";
 import Navbar from "@/subcomponents/Navbar";
 
+import addEventsImage from "@/assets/images/add-events/add_events_1.png";
+import goBackstageImage from "@/assets/images/go-back-stage/back-stage.png";
+import brandFeaturedImage from "@/assets/images/brand-featured/brand_featured_1.png";
+
 function App() {
   return (
     <div className="w-screen pr-20 pl-20 bg-black">
       <Navbar></Navbar>
       <Hero></Hero>
-      <BrandFeatured></BrandFeatured>
+      <BrandFeatured image={brandFeaturedImage}></BrandFeatured>
       <CityGuides></CityGuides>
       <PopularEvents></PopularEvents>
       <PerformanceSpotlights></PerformanceSpotlights>
       <ArtOrganizations></ArtOrganizations>
-      <GoBackstage></GoBackstage>
+      <GoBackstage image={goBackstageImage}></GoBackstage>
       <LatestNews></LatestNews>
       <Hero2></Hero2>
-      <AddEvents></AddEvents>
+      <AddEvents image={addEventsImage}></AddEvents>
       <Footer></Footer>
     </div>
   );
