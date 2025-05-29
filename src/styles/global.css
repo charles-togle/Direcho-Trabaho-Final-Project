@@ -1,14 +1,8 @@
 /* for base styles and css*/
 
-<<<<<<< HEAD
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
-=======
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
->>>>>>> main
 
 @import "tailwindcss";
-
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 @theme {
   --color-primary-red: #c22026;
@@ -75,7 +69,6 @@
   --text-2: clamp(0.625rem, 1.5vw, 0.625rem);
   --font-content: "Open Sans", sans-serif;
 }
-<<<<<<< HEAD
 
 /* landing page - hero section style */
 .hero-bg {
@@ -88,5 +81,3 @@
     url(../assets/images/brand-featured/brand_featured_1.png) no-repeat center /
       cover;
 }
-=======
->>>>>>> main
