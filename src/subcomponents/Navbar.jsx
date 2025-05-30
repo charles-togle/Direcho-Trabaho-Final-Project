@@ -8,7 +8,7 @@ export default function Navbar() {
   const [openBurger, setOpenBurger] = useState(false);
   return (
     <nav className="w-full fixed top-0 z-50 py-5">
-      <div className="h-full w-10/12 flex items-center justify-between mx-auto lg:max-w-full">
+      <div className="h-full w-11/12 flex items-center justify-between mx-auto lg:max-w-full">
         <div>
           <img src={Logo} alt="Logo" />
         </div>
