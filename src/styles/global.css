@@ -4,8 +4,6 @@
 
 @import "tailwindcss";
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
-
 @theme {
   --color-primary-red: #c22026;
   --color-black: #000000;
@@ -70,4 +68,16 @@
   --text-1: clamp(0.75rem, 2vw, 0.75rem);
   --text-2: clamp(0.625rem, 1.5vw, 0.625rem);
   --font-content: "Open Sans", sans-serif;
+}
+
+/* landing page - hero section style */
+.hero-bg {
+  background: linear-gradient(rgba(0, 34, 65, 0.1), rgba(0, 34, 65, 0)),
+    url(../assets/images/hero1/hero_1.png) no-repeat center / cover;
+}
+
+.hero2-bg {
+  background: linear-gradient(rgba(0, 34, 65, 0.1), rgba(0, 34, 65, 0)),
+    url(../assets/images/brand-featured/brand_featured_1.png) no-repeat center /
+      cover;
 }
