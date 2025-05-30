@@ -31,8 +31,10 @@ function App() {
         <GoBackstage image={goBackstageImage}></GoBackstage>
         <LatestNews></LatestNews>
         <AddEvents image={addEventsImage}></AddEvents>
-        <Footer></Footer>
       </main>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </div>
   );
 }
