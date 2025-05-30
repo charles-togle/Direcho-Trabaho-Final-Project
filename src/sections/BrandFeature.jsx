@@ -11,6 +11,7 @@ export default function BrandFeatured({ image }) {
         description="Looking for more exposure? Need help selling ticket? We got your back."
         buttonText="Learn more"
         image={image}
+        className=""
       />
     </section>
   );

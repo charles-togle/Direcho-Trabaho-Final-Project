@@ -1,6 +1,6 @@
 export default function Hero2() {
   return (
-    <section className="backdrop-blur-md bg-[linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.64))] border-2 border-[rgba(30,31,34,1)] rounded-4xl w-[1600px] mx-auto h-[417px] absolute -bottom-60 right-64 z-10">
+    <section className="backdrop-blur-md bg-[linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.64))] border-2 border-[rgba(30,31,34,1)] rounded-4xl w-[1550px] mx-auto h-[417px] absolute -bottom-60 right-46 z-10">
       <div className="flex justify-around">
         <div className="flex flex-col gap-10 h-[300px] w-[850px] mx-auto p-16">
           <h1 className="font-bold text-5xl leading-[54px] w-[550px]">
