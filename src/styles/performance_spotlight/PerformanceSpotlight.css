@@ -1,0 +1,39 @@
+/* Section */
+@import "tailwindcss";
+
+.spotlight__container {
+  @apply h-screen mt-20;
+}
+
+/* H1 */
+
+.spotlight__container h1 {
+  @apply text-white mb-10 text-2xl font-bold;
+}
+
+/* Grid Column */
+
+.spotlight__grid__container {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6;
+}
+
+/* Content */
+.spotlight__content__container {
+  @apply flex flex-col justify-between items-center h-[450px] bg-cover bg-center rounded-lg p-4;
+}
+
+.spotlight__content__container h2 {
+  @apply text-white text-xl font-bold;
+}
+
+.spotlight__content {
+  @apply flex-1 flex items-center justify-center w-full;
+}
+
+.spotlight__content__image {
+  @apply w-[50px] h-[50px] border-none bg-black p-2 rounded-full flex items-center justify-center;
+}
+
+.spotlight__content__image img {
+  @apply max-w-full max-h-full;
+}

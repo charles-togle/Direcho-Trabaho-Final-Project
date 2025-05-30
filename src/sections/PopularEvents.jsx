@@ -35,7 +35,7 @@ export default function PopularEvents() {
     <>
       <section
         id="popular-events"
-        className={`text-white -mr-20 -ml-20 pb-10`}
+        className={`text-white pb-10`}
         style={{ backgroundImage: `url(${PopularEventsBg})` }}
       >
         <Container>

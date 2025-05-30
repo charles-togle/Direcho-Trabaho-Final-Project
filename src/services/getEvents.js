@@ -1,15 +1,16 @@
-import data from './data.json'
-export const getData = object => {
-  return new Promise(resolve => {
+import data from "./data.json";
+
+export const getData = (object) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       if (object) {
-        resolve(data?.[object])
+        resolve(data?.[object]);
       } else {
-        resolve(data)
+        resolve(data);
       }
-    }, 1500)
-  })
-}
+    }, 1500);
+  });
+};
 
 /*Sample usage
 
