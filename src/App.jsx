@@ -18,7 +18,7 @@ import brandFeaturedImage from "@/assets/images/brand-featured/brand_featured_1.
 
 function App() {
   return (
-    <div className="bg-black">
+    <div className="bg-black overflow-hidden">
       <header>
         <Navbar></Navbar>
       </header>

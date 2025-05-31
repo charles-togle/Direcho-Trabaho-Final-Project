@@ -40,5 +40,24 @@
       "tags": ["Theater", "Musical"],
       "image": "src/assets/images/popular-events/moulin_rouge.png"
     }
+  ],
+
+  "performanceSpotlight": [
+    {
+      "title": "Phantom of the Opera",
+      "image": "src/assets/images/performance-spotlights/phantom_of_the_opera.png"
+    },
+    {
+      "title": "Volta (Cirque De Soleil)",
+      "image": "src/assets/images/performance-spotlights/volta.png"
+    },
+    {
+      "title": "SF Opera Feature",
+      "image": "src/assets/images/performance-spotlights/opera_feature.png"
+    },
+    {
+      "title": "Head Over Heels",
+      "image": "src/assets/images/performance-spotlights/head_over_heels.png"
+    }
   ]
 }

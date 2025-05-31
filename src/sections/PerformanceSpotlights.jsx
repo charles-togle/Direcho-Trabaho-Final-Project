@@ -1,18 +1,34 @@
 import Container from "../subcomponents/Container";
+import "../styles/performance_spotlight/PerformanceSpotlight.css";
+import Vector from "../assets/images/performance-spotlights/Vector.png";
+import spotlightPerformanceData from "../hooks/FetchData";
 
 export default function PerformanceSpotlights() {
+  const { data, loading } = spotlightPerformanceData();
+
+  if (loading) {
+    return <p className="text-white">Loading</p>;
+  }
   return (
     <>
       <Container>
-        <section className="h-screen mt-20">
-          <h1 className="text-white mb-10 text-heading-2 font-bold">
-            Performance Spotlights
-          </h1>
-          <div className="grid grid-cols-4 gap-7">
-            <div className="h-[390px] bg-gray-300"></div>
-            <div className="h-[390px] bg-gray-300"></div>
-            <div className="h-[390px] bg-gray-300"></div>
-            <div className="h-[390px] bg-gray-300"></div>
+        <section className="spotlight__container">
+          <h1>Performance Spotlights</h1>
+          <div className="spotlight__grid__container">
+            {data.map((data, index) => (
+              <div
+                key={index}
+                style={{ backgroundImage: `url(${data.image})` }}
+                className="spotlight__content__container"
+              >
+                <div className="spotlight__content">
+                  <div className="spotlight__content__image">
+                    <img src={Vector} alt="Vector" />
+                  </div>
+                </div>
+                <h2>{data.title}</h2>
+              </div>
+            ))}
           </div>
         </section>
       </Container>

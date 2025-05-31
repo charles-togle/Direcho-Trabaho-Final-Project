@@ -35,7 +35,7 @@ export default function CityGuides({ title = "City Guides" }) {
   return (
     <>
       <Container>
-        <section className="h-[77vh] w-full mx-auto pb-15 py-5 flex flex-col justify-end ">
+        <section className="h-[70vh] w-full mx-auto pb-15 py-5 flex flex-col justify-end ">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-white text-lg font-semibold">{title}</h2>
 
