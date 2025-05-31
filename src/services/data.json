@@ -7,7 +7,10 @@
       "priceNote": "Start from",
       "date": "5/04/2021 - 10/10/2021",
       "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day ...",
-      "tags": ["Theater", "Musical"],
+      "tags": [
+        "Theater",
+        "Musical"
+      ],
       "image": "src/assets/images/popular-events/book_of_mormon.png"
     },
     {
@@ -17,7 +20,10 @@
       "priceNote": "Start from",
       "date": "5/04/2021 - 10/10/2021",
       "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day ...",
-      "tags": ["Theater", "Musical"],
+      "tags": [
+        "Theater",
+        "Musical"
+      ],
       "image": "src/assets/images/popular-events/hamilton.png"
     },
     {
@@ -27,7 +33,10 @@
       "priceNote": "Avg. price",
       "date": "5/04/2021 - 10/10/2021",
       "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day ...",
-      "tags": ["Theater", "Musical"],
+      "tags": [
+        "Theater",
+        "Musical"
+      ],
       "image": "src/assets/images/popular-events/symphony_sound_box.png"
     },
     {
@@ -37,11 +46,13 @@
       "priceNote": "Avg. price",
       "date": "5/04/2021 - 10/10/2021",
       "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day ...",
-      "tags": ["Theater", "Musical"],
+      "tags": [
+        "Theater",
+        "Musical"
+      ],
       "image": "src/assets/images/popular-events/moulin_rouge.png"
     }
   ],
-
   "performanceSpotlight": [
     {
       "title": "Phantom of the Opera",
@@ -58,6 +69,48 @@
     {
       "title": "Head Over Heels",
       "image": "src/assets/images/performance-spotlights/head_over_heels.png"
+    }
+  ],
+  "artOrganizations": [
+    {
+      "name": "San Francisco Symphony",
+      "location": "San Francisco, CA",
+      "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day...",
+      "tags": [
+        "Theater",
+        "Musical"
+      ],
+      "image": "src/assets/images/art-organizations/symphony.png"
+    },
+    {
+      "name": "NYC Ballet",
+      "location": "New York City, NY",
+      "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day...",
+      "tags": [
+        "Theater",
+        "Dance"
+      ],
+      "image": "src/assets/images/art-organizations/ballet.png"
+    },
+    {
+      "name": "LA Dance Company",
+      "location": "San Francisco, CA",
+      "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day...",
+      "tags": [
+        "Music",
+        "Dance"
+      ],
+      "image": "src/assets/images/art-organizations/dance.png"
+    },
+    {
+      "name": "Red Rocks Amphitheatre",
+      "location": "Denver, Colorado",
+      "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day...",
+      "tags": [
+        "Concerts",
+        "Music"
+      ],
+      "image": "src/assets/images/art-organizations/ampitheatre.png"
     }
   ]
 }
