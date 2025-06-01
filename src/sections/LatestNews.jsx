@@ -7,7 +7,7 @@ import LatestNewsImage2 from "@/assets/images/latest-news/latest_news_2.png";
 
 function NewsCard({ image, title, description, date }) {
   return (
-    <div className="flex bg-[#1E1F22] text-white rounded-[16px] w-[588px] h-[282px]">
+    <div className="flex bg-[#1E1F22] text-white rounded-[16px] w-3/4 h-[282px]">
       <img src={image} alt={title} className="w-[251px] h-[251px] m-3.5" />
       <div className="flex-col p-3">
         <div>
