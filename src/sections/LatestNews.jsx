@@ -1,6 +1,7 @@
 import React from "react";
 
 import Container from "@/subcomponents/Container.jsx";
+import SeeAllNavigation from "../subcomponents/SeeAllNavigation";
 
 import LatestNewsImage1 from "@/assets/images/latest-news/latest_news_1.png";
 import LatestNewsImage2 from "@/assets/images/latest-news/latest_news_2.png";
@@ -27,18 +28,8 @@ export default function LatestNews() {
       <Container>
         <section className="bg-black py-5 text-white">
           <div className="flex justify-between items-center mb-4">
-            <h2 className="text-lg font-semibold">Latest news</h2>
-            <div className="flex items-center gap-2">
-              <button className="text-white px-4 hover:underline">
-                See All
-              </button>
-              <button className="bg-gray-800 text-white px-3 py-2 rounded-full hover:bg-gray-700">
-                {"<"}
-              </button>
-              <button className="bg-gray-800 text-white px-3 py-2 rounded-full hover:bg-gray-700">
-                {">"}
-              </button>
-            </div>
+            <h2 className="text-lg font-bold">Latest news</h2>
+            <SeeAllNavigation />
           </div>
           <div className="flex justify-between gap-5">
             <NewsCard

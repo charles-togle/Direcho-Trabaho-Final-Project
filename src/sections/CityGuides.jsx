@@ -1,5 +1,8 @@
 import React from "react";
 
+import left_icon from "@/assets/icons/left_icon.png";
+import right_icon from "@/assets/icons/right_icon.png";
+
 import SanFrancisco from "@/assets/images/city-guides/SanFrancisco.png";
 import NewYorkCity from "@/assets/images/city-guides/NewYorkCity.png";
 import Miami from "@/assets/images/city-guides/Miami.png";
@@ -35,16 +38,24 @@ export default function CityGuides({ title = "City Guides" }) {
   return (
     <>
       <Container>
-        <section className="h-[70vh] w-full mx-auto pb-15 py-5 flex flex-col justify-end ">
-          <div className="flex justify-between items-center mb-4">
+        <section className="h-[70vh] w-full mx-auto pb-15 py-5 flex flex-col justify-end">
+          <div className="flex items-center justify-between py-5">
             <h2 className="text-white text-lg font-semibold">{title}</h2>
 
             <div className="flex items-center gap-2">
-              <button className="bg-gray-800 text-white px-3 py-2 rounded-full hover:bg-gray-700">
-                {"<"}
+              <button className="bg-gray-800 rounded-full hover:bg-gray-700 w-10 h-10 flex items-center justify-center">
+                <img
+                  src={left_icon}
+                  alt="left arrow"
+                  className="w-16px h-7.47px"
+                />
               </button>
-              <button className="bg-gray-800 text-white px-3 py-2 rounded-full hover:bg-gray-700">
-                {">"}
+              <button className="bg-gray-800 rounded-full hover:bg-gray-700 w-10 h-10 flex items-center justify-center">
+                <img
+                  src={right_icon}
+                  alt="right arrow"
+                  className="w-16px h-7.47px"
+                />
               </button>
             </div>
           </div>
