@@ -18,7 +18,9 @@ export default function PerformanceSpotlights() {
         <section className="spotlight__container">
           <h1>Performance Spotlights</h1>
           <Grid className="spotlight__grid__container">
-            <SpotlightCardContent data={data} />
+            {data.map((data, index) => (
+              <SpotlightCardContent key={index} data={data} />
+            ))}
           </Grid>
         </section>
       </Container>
