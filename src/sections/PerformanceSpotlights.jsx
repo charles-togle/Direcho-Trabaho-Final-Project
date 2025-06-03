@@ -1,35 +1,25 @@
 import Container from "../subcomponents/Container";
 import "../styles/performance_spotlight/PerformanceSpotlight.css";
-import Vector from "../assets/images/performance-spotlights/Vector.png";
 import spotlightPerformanceData from "../hooks/FetchData";
+import SpotlightCardContent from "../subcomponents/performance-spotlight/SpotlightCardContent";
+import LoadingSpinner from "../subcomponents/LoadingSpinner";
+import Grid from "../subcomponents/Grid";
 
 export default function PerformanceSpotlights() {
   const { data, loading } = spotlightPerformanceData();
 
   if (loading) {
-    return <p className="text-white">Loading</p>;
+    return <LoadingSpinner />;
   }
+
   return (
     <>
       <Container>
         <section className="spotlight__container">
           <h1>Performance Spotlights</h1>
-          <div className="spotlight__grid__container">
-            {data.map((data, index) => (
-              <div
-                key={index}
-                style={{ backgroundImage: `url(${data.image})` }}
-                className="spotlight__content__container"
-              >
-                <div className="spotlight__content">
-                  <div className="spotlight__content__image">
-                    <img src={Vector} alt="Vector" />
-                  </div>
-                </div>
-                <h2>{data.title}</h2>
-              </div>
-            ))}
-          </div>
+          <Grid className="spotlight__grid__container">
+            <SpotlightCardContent data={data} />
+          </Grid>
         </section>
       </Container>
     </>
