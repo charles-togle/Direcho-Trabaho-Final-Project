@@ -121,5 +121,19 @@
     },
     { "name": "Chicago", "image": "src/assets/images/city-guides/Chicago.png" },
     { "name": "Seattle", "image": "src/assets/images/city-guides/Seattle.png" }
+  ],
+  "latestNews": [
+    {
+      "image": "src/assets/images/latest-news/latest_news_1.png",
+      "title": "An exclusive interview with David Brown - Mr. Piano man",
+      "description": "1-on-1 interview with the legendary band and an inside look at their journey through the years. A read you won’t want to miss!",
+      "date": "04/18/2021"
+    },
+    {
+      "image": "src/assets/images/latest-news/latest_news_2.png",
+      "title": "An exclusive interview with David Brown - Mr. Piano man",
+      "description": "1-on-1 interview with the legendary band and an inside look at their journey through the years. A read you won’t want to miss!",
+      "date": "04/18/2021"
+    }
   ]
 }
