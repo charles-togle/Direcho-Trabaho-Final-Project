@@ -43,14 +43,14 @@ export default function CityGuides({ title = "City Guides" }) {
             <h2 className="text-white text-lg font-semibold">{title}</h2>
 
             <div className="flex items-center gap-2">
-              <button className="bg-gray-800 rounded-full hover:bg-gray-700 w-10 h-10 flex items-center justify-center">
+              <button className="bg-base-shade rounded-full hover:bg-gray-700 w-10 h-10 flex items-center justify-center">
                 <img
                   src={left_icon}
                   alt="left arrow"
                   className="w-16px h-7.47px"
                 />
               </button>
-              <button className="bg-gray-800 rounded-full hover:bg-gray-700 w-10 h-10 flex items-center justify-center">
+              <button className="bg-base-shade rounded-full hover:bg-gray-700 w-10 h-10 flex items-center justify-center">
                 <img
                   src={right_icon}
                   alt="right arrow"

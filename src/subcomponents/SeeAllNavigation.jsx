@@ -14,14 +14,14 @@ const SeeAllNavigation = ({ onLeftClick, onRightClick, showSeeAll = true }) => {
 
       <button
         onClick={onLeftClick}
-        className="bg-gray-800 rounded-full hover:bg-gray-700 w-10 h-10 flex items-center justify-center"
+        className="bg-base-shade rounded-full hover:bg-gray-700 w-10 h-10 flex items-center justify-center"
       >
         <img src={left_icon} alt="left arrow" className="w-16px h-7.47px" />
       </button>
 
       <button
         onClick={onRightClick}
-        className="bg-gray-800 rounded-full hover:bg-gray-700 w-10 h-10 flex items-center justify-center"
+        className="bg-base-shade rounded-full hover:bg-gray-700 w-10 h-10 flex items-center justify-center"
       >
         <img src={right_icon} alt="right arrow" className="w-16px h-7.47px" />
       </button>
