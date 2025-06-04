@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+.hero__container {
+  @apply h-[65vh] md:h-[85vh] lg:h-screen flex flex-col justify-center text-white lg:items-start;
+}
+
+.hero__heading {
+  @apply w-full font-bold text-4xl md:text-5xl lg:w-2/6 xl:w-1/4 lg:leading-[62px] 2xl:leading-[72px] 2xl:text-6xl;
+}
+
+.hero__content {
+  @apply text-xl py-5 font-semibold leading-[100%];
+}
+
+/* Hero 2 */
+
+.hero2__section__container {
+  @apply backdrop-blur-md bg-[linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.64))] border-2 border-[rgba(30,31,34,1)] rounded-4xl mx-auto lg:h-[317px] xl:h-[417px] absolute w-10/12 -bottom-[28%] lg:right-22 xl:right-29 2xl:right-40.5 lg:max-w-full z-10;
+}
+
+.hero2__content__container {
+  @apply flex justify-around;
+}
+
+.hero2__brand__image__container {
+  @apply flex flex-col lg:gap-5 2xl:gap-10 h-[300px] w-[850px] mx-auto lg:p-8 xl:p-13 2xl:p-16;
+}
+
+.hero2__brand__image__container h1 {
+  @apply font-bold lg:text-3xl lg:leading-[42px] xl:text-4xl xl:leading-[50px] 2xl:text-5xl 2xl:leading-[54px] w-full 2xl:w-[550px];
+}
+
+.hero2__brand__image__container h2 {
+  @apply font-semibold lg:text-xl 2xl:text-2xl w-9/12;
+}
+
+.featured__button {
+  @apply border-none w-[180px] h-[48px] p-5 rounded-3xl text-white flex items-center justify-center;
+}
+
+.bg__container {
+  @apply bg-gray-500 border-none rounded-3xl w-9/12 2xl:w-[600px] lg:h-[260px] xl:h-[350px]  mt-6 mr-11 mx-auto;
+}

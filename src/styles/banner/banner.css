@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.banner__container {
+  @apply lg:h-[65vh] xl:h-[70vh] 2xl:h-[75vh] flex flex-col justify-center text-white text-center items-center lg:gap-5 xl:gap-8 2xl:gap-10 my-10;
+}
+
+.banner__container h1 {
+  @apply lg:text-3xl xl:text-4xl 2xl:text-5xl lg:leading-10 xl:leading-12 2xl:leading-14 w-1/3 font-bold;
+}
+
+.banner__container p {
+  @apply font-semibold lg:text-lg xl:text-xl 2xl:text-2xl;
+}

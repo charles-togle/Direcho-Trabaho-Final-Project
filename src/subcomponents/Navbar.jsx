@@ -3,20 +3,22 @@ import { RxPerson } from "react-icons/rx";
 import Logo from "@/assets/images/hero1/logo.png";
 import { useState } from "react";
 import DropDownNav from "../sections/DropDownNav";
+// CSS
+import "../styles/navbar/navbar.css";
 
 export default function Navbar() {
   const [openBurger, setOpenBurger] = useState(false);
   return (
-    <nav className="w-full fixed top-0 z-50 py-5">
-      <div className="h-full w-11/12 flex items-center justify-between mx-auto lg:max-w-full">
+    <nav>
+      <div className="nav__container">
         <div>
           <img src={Logo} alt="Logo" />
         </div>
-        <div className="flex gap-5 items-center text-white">
-          <p className="font-semibold leading-[100%]">For professionals</p>
-          <div className="flex gap-2 items-center p-3 border-none rounded-3xl bg-[#1E1F22]">
+        <div className="nav__container__content">
+          <p>For professionals</p>
+          <div className="nav__container__menu">
             <RxHamburgerMenu
-              className="cursor-pointer transition-all duration-200"
+              className="nav__burger__icon"
               size={20}
               onClick={() => setOpenBurger((prev) => !prev)}
             />
@@ -24,7 +26,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      {openBurger && <DropDownNav />}
+      {openBurger && <DropDownNav setOpenBurger={setOpenBurger} />}
     </nav>
   );
 }
