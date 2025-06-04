@@ -1,52 +1,47 @@
 import React from "react";
-
+import { useEffect, useState } from "react";
+import { getData } from "../services/getEvents";
+import LoadingSpinner from "../subcomponents/LoadingSpinner";
 import Container from "@/subcomponents/Container.jsx";
 import SeeAllNavigation from "../subcomponents/SeeAllNavigation";
-
-import LatestNewsImage1 from "@/assets/images/latest-news/latest_news_1.png";
-import LatestNewsImage2 from "@/assets/images/latest-news/latest_news_2.png";
-
-function NewsCard({ image, title, description, date }) {
-  return (
-    <div className="flex bg-[#1E1F22] text-white rounded-[16px] w-3/4 h-[282px]">
-      <img src={image} alt={title} className="w-[251px] h-[251px] m-3.5" />
-      <div className="flex-col p-3">
-        <div>
-          <h3 className="text-lg font-semibold mb-8">{title}</h3>
-          <p className="text-sm text-gray-300 mb-17">{description}</p>
-        </div>
-        <p className="text-xs text-gray-400">Published:</p>
-        <p className="text-xs text-gray-400">{date}</p>
-      </div>
-    </div>
-  );
-}
+import NewsCard from "../subcomponents/latest-news/NewsCard";
 
 export default function LatestNews() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function getDataFromJson() {
+      const data = await getData("latestNews");
+      setData(data);
+      setLoading(false);
+      console.log(data);
+    }
+    getDataFromJson();
+  }, []);
+  if (loading) {
+    return <LoadingSpinner />;
+  }
+
   return (
-    <>
-      <Container>
-        <section className="bg-black py-5 text-white">
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="text-lg font-bold">Latest news</h2>
-            <SeeAllNavigation />
-          </div>
-          <div className="flex justify-between gap-5">
+    <Container>
+      <section className="bg-black py-5 text-white">
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-lg font-bold">Latest news</h2>
+          <SeeAllNavigation />
+        </div>
+        <div className="flex justify-between gap-5">
+          {data.map((news, index) => (
             <NewsCard
-              image={LatestNewsImage1}
-              title="An exclusive interview with David Brown - Mr. Piano man"
-              description="1-on-1 interview with the legendary band and an inside look at their journey through the years. A read you won’t want to miss!"
-              date="04/18/2021"
+              key={index}
+              image={news.image}
+              title={news.title}
+              description={news.description}
+              date={news.date}
             />
-            <NewsCard
-              image={LatestNewsImage2}
-              title="An exclusive interview with David Brown - Mr. Piano man"
-              description="1-on-1 interview with the legendary band and an inside look at their journey through the years. A read you won’t want to miss!"
-              date="04/18/2021"
-            />
-          </div>
-        </section>
-      </Container>
-    </>
+          ))}
+        </div>
+      </section>
+    </Container>
   );
 }
