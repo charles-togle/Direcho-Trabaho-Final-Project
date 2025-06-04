@@ -4,6 +4,8 @@ import Card from "../subcomponents/shared/Card";
 import PopularEventsBg from "../assets/images/popular-events/bg.png";
 import Container from "../subcomponents/Container";
 import SeeAllNavigation from "../subcomponents/SeeAllNavigation";
+import LoadingSpinner from "../subcomponents/LoadingSpinner";
+
 export default function PopularEvents() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);

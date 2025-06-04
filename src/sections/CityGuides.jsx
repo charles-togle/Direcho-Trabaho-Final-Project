@@ -1,40 +1,29 @@
 import React from "react";
-
+import { useEffect, useState } from "react";
+import { getData } from "../services/getEvents";
+import LoadingSpinner from "../subcomponents/LoadingSpinner";
+import CityCard from "../subcomponents/city-guide/CityCard";
 import left_icon from "@/assets/icons/left_icon.png";
 import right_icon from "@/assets/icons/right_icon.png";
-
-import SanFrancisco from "@/assets/images/city-guides/SanFrancisco.png";
-import NewYorkCity from "@/assets/images/city-guides/NewYorkCity.png";
-import Miami from "@/assets/images/city-guides/Miami.png";
-import LosAngeles from "@/assets/images/city-guides/LosAngeles.png";
-import Chicago from "@/assets/images/city-guides/Chicago.png";
-import Seattle from "@/assets/images/city-guides/Seattle.png";
 import Container from "../subcomponents/Container";
 
-const cityItems = [
-  { name: "San Francisco", image: SanFrancisco },
-  { name: "New York City", image: NewYorkCity },
-  { name: "Miami", image: Miami },
-  { name: "Los Angeles", image: LosAngeles },
-  { name: "Chicago", image: Chicago },
-  { name: "Seattle", image: Seattle },
-];
-
-function CityCard({ image, text }) {
-  return (
-    <div className="relative">
-      <img src={image} alt={text} />
-      <div
-        className="absolute bottom-0 left-0 w-full h-[50px] rounded-b-[16px] flex items-center pl-3"
-        style={{ backgroundColor: "#1E1F22" }}
-      >
-        <p className="text-white">{text}</p>
-      </div>
-    </div>
-  );
-}
-
 export default function CityGuides({ title = "City Guides" }) {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function getDataFromJson() {
+      const data = await getData("cityGuides");
+      setData(data);
+      setLoading(false);
+      console.log(data);
+    }
+    getDataFromJson();
+  }, []);
+  if (loading) {
+    return <LoadingSpinner />;
+  }
+
   return (
     <>
       <Container>
@@ -61,7 +50,7 @@ export default function CityGuides({ title = "City Guides" }) {
           </div>
 
           <div className="flex gap-4 overflow-hidden">
-            {cityItems.map((item, index) => (
+            {data.map((item, index) => (
               <CityCard key={index} image={item.image} text={item.name} />
             ))}
           </div>

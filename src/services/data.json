@@ -7,10 +7,7 @@
       "priceNote": "Start from",
       "date": "5/04/2021 - 10/10/2021",
       "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day ...",
-      "tags": [
-        "Theater",
-        "Musical"
-      ],
+      "tags": ["Theater", "Musical"],
       "image": "src/assets/images/popular-events/book_of_mormon.png",
       "carouselMax": 6,
       "carouselIndex": 0
@@ -22,10 +19,7 @@
       "priceNote": "Start from",
       "date": "5/04/2021 - 10/10/2021",
       "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day ...",
-      "tags": [
-        "Theater",
-        "Musical"
-      ],
+      "tags": ["Theater", "Musical"],
       "image": "src/assets/images/popular-events/hamilton.png",
       "carouselMax": 6,
       "carouselIndex": 0
@@ -37,10 +31,7 @@
       "priceNote": "Avg. price",
       "date": "5/04/2021 - 10/10/2021",
       "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day ...",
-      "tags": [
-        "Theater",
-        "Musical"
-      ],
+      "tags": ["Theater", "Musical"],
       "image": "src/assets/images/popular-events/symphony_sound_box.png",
       "carouselMax": 6,
       "carouselIndex": 2
@@ -52,10 +43,7 @@
       "priceNote": "Avg. price",
       "date": "5/04/2021 - 10/10/2021",
       "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day ...",
-      "tags": [
-        "Theater",
-        "Musical"
-      ],
+      "tags": ["Theater", "Musical"],
       "image": "src/assets/images/popular-events/moulin_rouge.png",
       "carouselMax": 6,
       "carouselIndex": 0
@@ -84,10 +72,7 @@
       "name": "San Francisco Symphony",
       "location": "San Francisco, CA",
       "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day...",
-      "tags": [
-        "Theater",
-        "Musical"
-      ],
+      "tags": ["Theater", "Musical"],
       "image": "src/assets/images/art-organizations/symphony.png",
       "carouselMax": 6,
       "carouselIndex": 0
@@ -96,10 +81,7 @@
       "name": "NYC Ballet",
       "location": "New York City, NY",
       "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day...",
-      "tags": [
-        "Theater",
-        "Dance"
-      ],
+      "tags": ["Theater", "Dance"],
       "image": "src/assets/images/art-organizations/ballet.png",
       "carouselMax": 6,
       "carouselIndex": 0
@@ -108,10 +90,7 @@
       "name": "LA Dance Company",
       "location": "San Francisco, CA",
       "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day...",
-      "tags": [
-        "Music",
-        "Dance"
-      ],
+      "tags": ["Music", "Dance"],
       "image": "src/assets/images/art-organizations/dance.png",
       "carouselMax": 6,
       "carouselIndex": 2
@@ -120,13 +99,27 @@
       "name": "Red Rocks Amphitheatre",
       "location": "Denver, Colorado",
       "description": "First staged in 2011, the play is a satirical examination of the beliefs and practices of The Church of Jesus Christ of Latter-day...",
-      "tags": [
-        "Concerts",
-        "Music"
-      ],
+      "tags": ["Concerts", "Music"],
       "image": "src/assets/images/art-organizations/ampitheatre.png",
       "carouselMax": 6,
       "carouselIndex": 0
     }
+  ],
+  "cityGuides": [
+    {
+      "name": "San Francisco",
+      "image": "src/assets/images/city-guides/SanFrancisco.png"
+    },
+    {
+      "name": "New York City",
+      "image": "src/assets/images/city-guides/NewYorkCity.png"
+    },
+    { "name": "Miami", "image": "src/assets/images/city-guides/Miami.png" },
+    {
+      "name": "Los Angeles",
+      "image": "src/assets/images/city-guides/LosAngeles.png"
+    },
+    { "name": "Chicago", "image": "src/assets/images/city-guides/Chicago.png" },
+    { "name": "Seattle", "image": "src/assets/images/city-guides/Seattle.png" }
   ]
 }
