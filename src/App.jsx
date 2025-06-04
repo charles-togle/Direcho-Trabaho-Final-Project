@@ -15,6 +15,7 @@ import Navbar from "@/subcomponents/Navbar";
 import addEventsImage from "@/assets/images/add-events/add_events_1.png";
 import goBackstageImage from "@/assets/images/go-back-stage/back-stage.png";
 import brandFeaturedImage from "@/assets/images/brand-featured/brand_featured_1.png";
+import Banner from "./sections/Banner";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <ArtOrganizations></ArtOrganizations>
         <GoBackstage image={goBackstageImage}></GoBackstage>
         <LatestNews></LatestNews>
+        <Banner></Banner>
         <AddEvents image={addEventsImage}></AddEvents>
       </main>
       <footer>
