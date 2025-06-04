@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import { getData } from '../services/getEvents'
-import Card from '../subcomponents/popular-events-art-organizations/Card'
+import Card from '../subcomponents/shared/Card'
 import PopularEventsBg from '../assets/images/popular-events/bg.png'
 import Container from '../subcomponents/Container'
+import SeeAllNavigation from '../subcomponents/SeeAllNavigation'
 export default function PopularEvents () {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
@@ -40,10 +41,11 @@ export default function PopularEvents () {
       >
         <Container>
           <div className='flex flex-col gap-7'>
-            <div className='mt-15'>
+            <div className='mt-15 flex flex-row justify-between'>
               <h1 className='font-content font-[700] text-heading-2'>
                 Popular events
               </h1>
+              <SeeAllNavigation showSeeAll={false}></SeeAllNavigation>
             </div>
             <div className='flex flex-row gap-6 pb-10'>
               {data.map((event, index) => {
@@ -61,6 +63,8 @@ export default function PopularEvents () {
                     isLiked={hearts[index]}
                     index={index}
                     onHeart={handleHeart}
+                    carouselIndex={event.carouselIndex}
+                    carouselMax={event.carouselMax}
                   ></Card>
                 )
               })}
