@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { getData } from '../services/getEvents'
-import Card from '../subcomponents/popular-events-art-organizations/Card'
+import Card from '../subcomponents/shared/Card'
 import PopularEventsBg from '../assets/images/popular-events/bg.png'
 import Container from '../subcomponents/Container'
 export default function ArtOrganizations () {
@@ -58,6 +58,8 @@ export default function ArtOrganizations () {
                     index={index}
                     onHeart={handleHeart}
                     isArtOrganization={true}
+                    carouselIndex={event.carouselIndex}
+                    carouselMax={event.carouselMax}
                   ></Card>
                 )
               })}

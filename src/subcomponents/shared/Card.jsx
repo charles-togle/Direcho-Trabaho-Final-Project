@@ -1,6 +1,7 @@
 import Details from './Details'
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 import Tag from './Tag'
+import CarouselIndicator from '../CarouselIndicator'
 export default function EventCard ({
   img,
   title,
@@ -13,6 +14,8 @@ export default function EventCard ({
   isLiked,
   index,
   onHeart = () => {},
+  carouselMax,
+  carouselIndex,
   isArtOrganization = false
 }) {
   return (
@@ -24,7 +27,15 @@ export default function EventCard ({
           <AiOutlineHeart color='white' size={24} />
         )}
       </div>
-      <img src={img} alt='picture' className='w-full' />
+      <div className='relative'>
+        <img src={img} alt='picture' className='w-full' />
+        <div className='absolute right-1/2 translate-x-1/2 bottom-3'>
+          <CarouselIndicator
+            max={carouselMax}
+            index={carouselIndex}
+          ></CarouselIndicator>
+        </div>
+      </div>
       <div
         className={`${
           ((title === 'Hamilton' || isArtOrganization) &&
