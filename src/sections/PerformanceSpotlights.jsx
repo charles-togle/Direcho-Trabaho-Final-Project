@@ -1,9 +1,11 @@
 import Container from "../subcomponents/Container";
-import "../styles/performance_spotlight/PerformanceSpotlight.css";
 import spotlightPerformanceData from "../hooks/FetchData";
 import SpotlightCardContent from "../subcomponents/performance-spotlight/SpotlightCardContent";
 import LoadingSpinner from "../subcomponents/LoadingSpinner";
 import Grid from "../subcomponents/Grid";
+
+// CSS
+import "../styles/performance_spotlight/performance-spotlight.css";
 
 export default function PerformanceSpotlights() {
   const { data, loading } = spotlightPerformanceData();

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+.dropdown__container {
+  @apply w-full h-screen absolute top-0 text-white bg-black rounded-xl shadow-lg lg:right-10 lg:top-18 lg:space-y-3 lg:h-[80vh] lg:w-[30%] xl:h-[62vh] 2xl:h-[62vh] 2xl:w-[20%];
+}
+
+.dropdown__header__container {
+  @apply p-4 relative mt-5 lg:mt-1;
+}
+
+.dropdown__header__content {
+  @apply flex items-center gap-5 mt-4 lg:mt-1;
+}
+
+.dropdown__header__container p {
+  @apply w-full text-sm lg:text-base xl:text-lg text-gray-400 mt-3 font-semibold;
+}
+
+.dropdown__header__content h2 {
+  @apply text-xl xl:text-2xl font-semibold;
+}
+
+.dropdown__image__container {
+  @apply lg:hidden border-none rounded-full p-3 bg-[#1E1F22];
+}
+
+.dropdown__button__container {
+  @apply flex gap-3 mt-5 mb-5 lg:mb-0 lg:mt-5 font-semibold text-sm lg:text-base xl:text-xl;
+}
+
+.dropdown__button {
+  @apply border-none w-1/2 h-[48px] rounded-3xl;
+}
+
+.close__icon {
+  @apply absolute top-0 right-7 block lg:hidden cursor-pointer;
+}
+
+.horizontal__line {
+  @apply border-t border-[#111111];
+}
+
+.item__container {
+  @apply flex items-center gap-3 px-4 py-5 lg:py-0 lg:px-3 xl:px-4 2xl:py-2 font-semibold lg:text-base xl:text-lg;
+}
