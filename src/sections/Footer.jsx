@@ -30,7 +30,9 @@ export default function Footer () {
               <a
                 href={link.link}
                 key={link.text}
-                className={`${link.text === 'Episodes' && 'row-span-2'}`}
+                className={`${
+                  link.text === 'Episodes' && 'row-span-2'
+                } hover:underline`}
               >
                 {link.text}
               </a>
@@ -47,7 +49,7 @@ export default function Footer () {
                   src={image.src}
                   alt={image.alt}
                   key={image.alt}
-                  className='w-12'
+                  className='w-12 cursor-pointer hover:brightness-130'
                 />
               ))}
             </div>

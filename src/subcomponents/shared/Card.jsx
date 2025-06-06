@@ -20,7 +20,10 @@ export default function EventCard ({
 }) {
   return (
     <div id='card' className='relative'>
-      <div className='absolute right-2 top-2' onClick={() => onHeart(index)}>
+      <div
+        className='absolute right-2 top-2 z-2 cursor-pointer'
+        onClick={() => onHeart(index)}
+      >
         {isLiked ? (
           <AiFillHeart color='white' fill='red' size={24} />
         ) : (

@@ -1,36 +1,36 @@
-import React from "react";
-import { useEffect, useState } from "react";
-import { getData } from "../services/getEvents";
-import LoadingSpinner from "../subcomponents/LoadingSpinner";
-import Container from "@/subcomponents/Container.jsx";
-import SeeAllNavigation from "../subcomponents/SeeAllNavigation";
-import NewsCard from "../subcomponents/latest-news/NewsCard";
+import React from 'react'
+import { useEffect, useState } from 'react'
+import { getData } from '../services/getEvents'
+import LoadingSpinner from '../subcomponents/LoadingSpinner'
+import Container from '@/subcomponents/Container.jsx'
+import SeeAllNavigation from '../subcomponents/SeeAllNavigation'
+import NewsCard from '../subcomponents/latest-news/NewsCard'
 
-export default function LatestNews() {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
+export default function LatestNews () {
+  const [data, setData] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    async function getDataFromJson() {
-      const data = await getData("latestNews");
-      setData(data);
-      setLoading(false);
-      console.log(data);
+    async function getDataFromJson () {
+      const data = await getData('latestNews')
+      setData(data)
+      setLoading(false)
+      console.log(data)
     }
-    getDataFromJson();
-  }, []);
+    getDataFromJson()
+  }, [])
   if (loading) {
-    return <LoadingSpinner />;
+    return <LoadingSpinner />
   }
 
   return (
     <Container>
-      <section className="bg-black py-5 text-white">
-        <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-bold">Latest news</h2>
+      <section className='bg-black py-5 text-white'>
+        <div className='flex justify-between items-center mb-4'>
+          <h2 className='text-2xl font-bold'>Latest news</h2>
           <SeeAllNavigation />
         </div>
-        <div className="flex justify-between gap-5">
+        <div className='flex justify-between gap-5'>
           {data.map((news, index) => (
             <NewsCard
               key={index}
@@ -43,5 +43,5 @@ export default function LatestNews() {
         </div>
       </section>
     </Container>
-  );
+  )
 }
